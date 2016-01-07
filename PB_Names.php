@@ -1,7 +1,6 @@
 <?php
 //Project Penny Blossoms
 
-
 $dataFile = fopen("PB_Data.txt", "w") or die("Unable to open file!");
 
 $array = $_POST;
@@ -15,11 +14,9 @@ foreach($array as $i => $info){
 	}
 }
 fclose($dataFile);
-
 if(isset($data)){
 	
 	Echo "Information Has been successfully inputted, please wait whilst we send you back.";
 	header( "refresh:4;url=PB_Entry_Form.html" );
 }
 ?>
-<form><input type="button" value="Back" onClick
